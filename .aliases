@@ -7,10 +7,10 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias p="cd ~/Dropbox/src"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -187,3 +187,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 # install npm dependencies from cache
 # https://github.com/npm/npm/issues/2568#issuecomment-30626394
 alias npmo="sudo npm install --cache-min 999999999"
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
