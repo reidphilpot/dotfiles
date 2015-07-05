@@ -30,9 +30,6 @@ alias chrome="open -a google\ chrome"
 alias chromium="open -a chromium"
 alias dashcode="open -a dashcode"
 alias f='open -a Finder'
-alias fireworks="open -a '/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.app'"
-alias photoshop="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
-alias gpr="~/code/gpr $1"
 
 # Thanks to stefanpenner for this one.
 # https://www.youtube.com/watch?v=SMWi7CLoZ2Q
@@ -45,11 +42,6 @@ alias bl="open -a google\ chrome 'http://browserling.com'"
 
 # be nice
 alias please=sudo
-
-# handy things
-alias bunyip='node ~/code/bunyip/cli.js'
-alias spotify="osascript ~/code/SpotifyControl/SpotifyControl.scpt"
-
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -89,7 +81,6 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
-
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
@@ -147,9 +138,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# Run DropboxUploader if you have it installed
-alias dropbox="~/code/Dropbox-Uploader/dropbox_uploader.sh $1"
 
 # Merge PDF files
 # Usage: `mergepdf -o output.pdf input{1,2,3}.pdf`

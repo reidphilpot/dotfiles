@@ -89,7 +89,7 @@ function gitio() {
 
 function clone {
   # customize username to your own 
-  local username="addyosmani"
+  local username="reidphilpot"
 
   local url=$1;
   local repo=$2;
